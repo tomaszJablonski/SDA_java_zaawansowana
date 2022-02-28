@@ -1,4 +1,4 @@
-package javaZaawansowanaProgramowanie_ZADANIA.Zadanie20;
+package javaZaawansowanaProgramowanie_ZADANIA.Zadanie20i21;
 
 public class Main {
     public static void main(String[] args) {
