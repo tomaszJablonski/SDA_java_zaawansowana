@@ -1,0 +1,24 @@
+1.
+1. Stwórz enum DayOfWeek oraz dodaj wartości.
+2. Stwórz klasę Shop. Sklep posiada nazwę oraz tablicę dni tygodnia w których jest otwarty.
+3. Stwórz kilka obiektów typu Sklep, niektóre z nich są otwarte w niedziele, niektóre nie.
+4. Stwórz tablicę sklepów. Napisz statyczną metodę, która przyjmuje tą tablice oraz dzień tygodnia, a następnie zwraca ilość sklepów otwartych w dany dzień tygodnia.
+
+2.
+1. Stwórz enum MathOperation (Dodawanie, odejmowanie, dzielenie, mnożenie).
+2. Dodaj statyczną metodę do enuma, która przyjmuje dwie liczby typu double oraz operację a następnie wraca jej wynik. Pomiń sprawdzenia zera w dzieleniu.
+3. Zmień lokalizację metody - niech będzie to metoda niestatyczna. (Wskazówka: Przeanalizuj instrukcję switch (this)). Usuń argument, który określał typ operacji. Jak wywołać operację?
+
+3.
+1. Stwórz nowy enum - ChemicalElement. Dodaj kilka pierwiastków (np. Wodór, Tlen, Rtęć).
+2. Dodaj nowe pole, które przetrzymuje typ pierwiastka (Wodór - H, Tlen - O, Rtęć - Hg).
+3. Dodaje metodę, która potrafi przekonwertować podany typ pierwiastka na enuma. (Wykorzystaj metodę values(), która zwraca wszystkie wartości z enuma).
+
+4.
+1. Stwórz nowy enum - SolarSystemPlanet, który obrazuje planety układu słonecznego.
+2. Dodaj planety układu słonecznego.
+3. Zmodyfikuj podany enum w taki sposób, żeby każda planeta przechowywała masę oraz promień.
+4. Dodaj nowy interfejs - Rotatable. Interfejs posiada jedną metodę `rotateSpeed`, która zwraca prędkość obrotu planety.
+5. Zaimplementuj nowy interfejs w enumie. Dokonaj niezbędnych zmian, tak żeby każda planeta zwracała prędkość obrotu.
+6. Stwórz nowy enum - PlanetType z dwoma wartościami - Rock, Gas.
+7. W enumie SolarSystemPlanet dodaj nową metodę, która zwraca typ planety.

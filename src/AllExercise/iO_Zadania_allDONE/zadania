@@ -1,0 +1,5 @@
+1. Napisz program, który wczytuje zawartość danego pliku,
+a następnie wypisuje ją na konsole.
+
+2. Napisz program, który pobiera tekst od użytkownika
+i wpisuje go do pliku, do momentu aż użytkownik wpisze "koniec".

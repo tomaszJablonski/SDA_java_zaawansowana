@@ -1,0 +1,5 @@
+to
+jest
+zwykły
+plik
+tekstowy

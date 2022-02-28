@@ -1,0 +1,13 @@
+1. Napisz wyrażenie lambda, które dla podanego stringa zwraca informację czy wszystkie litery są drukowane.
+done
+2. Napisz wyrażenie lambda, które dla podanego stringa zwraca ten sam tekst, tylko drukowanymi literami.
+done
+3. Napisz wyrażenie lambda, które generuje losową liczbę.
+done
+4. Napisz wyrażenie lambda, które generuje losową liczbę z podanego zakresu.
+done
+5. Napisz wyrażenie lambda, które sprawdza czy podany podany tekst zawiera przekazany fragment.
+done
+6. Napisz wyrażenie lambda, które wypisuje zawartość przekazanej tablicy na ekran.
+7. Napisz wyrażenie lambda, które przyjmuje mapę w postaci Map<Integer, Boolean> a następnie zwraca nową Set<Integer>,
+taki że znajdują się tam tylko wartości, które w mapie mają przypisaną wartość `true`.

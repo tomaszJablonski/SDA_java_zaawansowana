@@ -1,0 +1,6 @@
+1.
+1. Stwórz abstrakcyjną klasę Car.
+2. Dodaj klasy Fiat, Opel, Kia, które rozszerzają klasę Car.
+3. Stwórz tablicę obiektów typu Car oraz wypełnij ją losowymi obiekatmi.
+4. Napisz metodę, która przyjmuje stworzoną tablicę, a następnie zwraca trzyelementową tablicę, gdzie na poszczególnych pozycjach wypisuje ilość obiektów typu Fiat, Opel i Kia (w tej kolejności).
+5. Wypisz na ekran ilość poszczególnych pojazdów.

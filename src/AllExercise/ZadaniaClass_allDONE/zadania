@@ -1,0 +1,60 @@
+1.
+Stwórz klasy  wraz z konstruktorem inicjalizującym wszystkie wartości, getterami, setterami:
+1. Cat (pola: String name, int age, String race)
+Done
+2. Dog (pola: String name, int age, String race, String color)
+done
+3. Stwórz klasę Animal, która będzie wspólnym rodzicem dla klas Cat oraz Dog.
+done
+5. Wydziel część wspólną (pola) do klasy Animal.
+done
+6. W klasie Animal utwórz metodę voice(). Metoda powinna wyświetlać na konsoli odgłos, dla Animal niech to będzie „......".
+done
+7. W metodzie main utwórz kilka różnych obiektów klas Animal, Cat oraz Dog.
+done
+8. Nadpisz metodę voice, tak aby pies i kot wydawały odpowiednie dla nich odgłosy.
+done
+9. *Spróbuj przechować kilka stworzonych obiektów w tablicy. Czy da się utworzyć taką tablice, która może przechowywać różne zwierzęta? TODO Da się
+Done
+
+2.
+1. Stwórz klasę Prostokąt wraz z konstruktorem, który inicjalizuje długość oraz szerokość. Klasa prostokąt powinna mieć metodę pozwalającą obliczyć pole oraz obwód.
+done
+2. Stwórz klasę Kwadrat, która rozszerza klasę prostokąt. Zadbaj o to, żeby pole oraz obwód było obliczane poprawnie dla tej klasy. Dodaj odpowiedni konstruktor.
+done
+3. Korzystając z metody toString (sprawdź w google do czego służy) nadpisanej z klasy Object wypisz nazwę klasy, obwód oraz polę figury.
+done
+4. Stwórz kilka kwadratów oraz prostokątów, a następnie umiejść je w jednej tablicy (jaki powinien być typ danych?). Stwórz metodę, która wypisuje informacje o obiektach na ekran.
+Done
+5*. Napisz program, który pobiera od użytkownika kształt oraz niezbędne dane potrzebne do zainicjalizowania tego kształtu. Wypisz polę i obwód otrzymanej figury.
+done
+6*. Zmodyfikuj metodę do obliczania pola tak by była ona finalna - popraw klasy tak, żeby nadal działały.
+
+3.
+1. Stwórz klasę Pojazd - pojazd posiada maksymalną prędkość oraz aktualną prędkość. Dodaj gettery, settery oraz konstruktor ustawiający maksymalną prękość.
+2. Stwórz klasę Rower (maksymalna prękość 25), Samochód (100), Samolot (800). Klasy rozszerzają klasę Pojazd.
+3. Do klas Rower, Samochód oraz samolot dodaj nowe pole, które będzie ustawiane poprzez konstruktor. Dla klasy rower - ilość biegów (int), dla klasy Samochód typ paliwa (String), dla klasy Samolot - ilość silników.
+4. Zmodyfikuj setter aktualnej prędkości tak, aby wypisywał błąd oraz NIE ustawiał aktualnej prędkośći jeśli jest ona większa od maksymalnej lub mniejsza od zera.
+Done
+
+4.
+Zaimplementuj klasę Point2D. Klasa powinna zawierać:
+- dwa pola typu int: x , y
+- konstruktor bezparametrowy ustawiający wartość pól x i y na 0
+- konstruktor z dwoma parametrami: float x , float y
+- metody typu getter odpowiedzialne za zwracanie wartości zmiennej: x , y
+- metodę getXY zwracającą współrzędne x i y w postaci tablicy dwuelementowej
+- metody typu setter odpowiedzialne za ustawianie wartości pól x , y
+- metodę setXY ustawiającą współrzędne x i y
+- metoda toString powinna zwracać łańcuch tekstowy o następującym formacie: (x, y);
+Done
+
+5.
+Na podstawie klasy Point2D zaimplementuj klasę Point3D. Klasa ta powinna rozszerzać klasę Point2D oraz dodawać następującą implementację:
+- pole prywatne typu int: z
+- konstruktor przyjmujący wartości dla pól: x , y , z
+- metodę typu getter odpowiedzialną za zwracanie wartości zmiennej z
+- metodę getXYZ zwracającą współrzędne x , y , z w postaci tablicy trzyelementowej
+- metodę typu setter odpowiedzialną za ustawianie zmiennej z
+- metodę setXYZ ustawiającą wartości dla zmiennych x , y , z
+- metoda toString powinna zwracać łańcuch tekstowy o następującym formacie: (x, y, z) ;

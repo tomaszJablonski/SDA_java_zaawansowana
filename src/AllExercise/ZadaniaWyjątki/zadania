@@ -1,0 +1,16 @@
+1.
+1. Stwórz statyczną klasę Kalkulator, która będzie posiadała metody pozwalające dodawać, odejmować, mnożyć i dzielić liczby całkowite.
+2. Zmodyfikuj powstałą klasę tak, aby metody które dodają i mnożą mogły przyjmować więcej niż dwa argumenty (wykorzystaj mechanizm varargs).
+3. Upewnij się, że dodawnie i mnożenie przyjmują conajmniej 2 argumenty. W przeciwnym razie wypisz odpowiedni komunikat i zwróć -1.
+4. Przeciąż metodę służącą do dodawania i odejmowania tak by akceptowała typ int i double.
+5. Zmodyfikuj statyczny kalkulator tak, aby w przypadku dzielenia przez 0 był rzucany wyjątek typu unchecked - CannotDivideBy0Exception.
+6. Dodaj własny wyjątek typu checked ZaMalaIloscArgumentow, który będzie rzucany gdy metody add i multilpy otrzymają zbyt małą ilość ilość argumentów. Jako wiadomość w wyjątku wypisz: "Zbyt mała ilość argumentów. Wymagane X, podano: Y".
+7. Obsłuż wyjątki - w przypadku dzielenia przez zero na wyjścię błędów (System.err) wypisz odpowiedni komunikat; w przypadku zbyt małej liczby argumentów wypisz komunikat na zwykłe wyjście (System.out).
+
+2.
+1. Napisz metodę, który zamienia podany tekst na liczbę zmiennoprzecinkową. Konwersji dokonaj przy pomocy metody Double.parseDouble
+2. Jeżeli powyższa metoda rzuci wyjątek - wypisz odpowiedni komunikat dla użytkownika: "Text <text> nie może zostać zamieniony na liczbę double".
+3. Następnie dodaj nową klasę UnparsableString, która przechowuje jedno pole - String, którego się nie dało sparsować.
+4. Dodaj własny unchecked wyjątek DoubleParsingException, który przyjmuje UnparsableString i przechowuje go jako pole.
+5. Po wypisaniu komunikatu rzuć wyjątek DoubleParsingException wraz z polem UnparsableString.
+6. W metodzie main złap nowo stworzony wyjątek i wypisz string, którego nie udało się zamienić na liczbę.

@@ -1,0 +1,29 @@
+1.
+1. Stwórz abstrakcyjną klasę Zwierze. Klasa powinna przechowywać wiek (jako pole finalne)
+oraz posiadać jedną metodę abstrakcyjną dajGlos().
+
+2. Stwórz klasę Pies oraz Kot, które rozszerzają klasę Zwierze.
+Zaimplementuj potrzebne metody, dodaj odpowiednie konstruktory.
+
+Done
+
+2.
+1. Stwórz abstrakcyjną klasę Account. Klasa powinna przechowywać
+stan konta (jako pole typu double/BigDecimal(*dla chętnych))
+oraz definiować dwie metody abstrakcyjne:
+- double yearProfit(double currentBalance) - która powinna zwraca zarobek z przechowywanych środków po roku
+- String printProfits() - która powinna zwracać informacje jakie bonusy można otrzymać za użytkowanie danego konta.
+2. Dodaj klasę, która reprezentuje konto debetowe (DebitAccount), która rozszerza klasę Account. Konto debetowe nie oferuje oprocentowania środków, ale jako bonus można używać 2 kart debetowych jednocześnie.
+3. Dodaj klasę, która reprezentuje konto kredytowe (CreditAccount), która rozszerza klasę Account. Konto kredytowe nie oferuje oprocentowania środków, ale jako bonus można używać 2 kart kredytowych jednocześnie, oferuje zniżki w programie SuperDiscounts oraz zapewnia ubezpieczenie przed kradzieżą.
+4. Dodaj klasę, która reprezentuje konto oszczędnościowe (SavingAccount), która rozszerza klasę Account. Konto oszczędnościowe oferuje oprocentowania środków na 0.1% w skali roku, ale nie oferuje dodatkowych bonusów.
+
+Done
+Send a message to java-zaawansowana
+
+
+
+
+
+
+
+

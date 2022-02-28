@@ -1,0 +1,50 @@
+1.
+1. Stwórz interfejs Zwierze wraz z metodą dajGłos().
+2. Stwórz klasy implementujące ten interejs: Kot, Pies, Wąż.
+3. Stwórz kilka obiektów i wywołaj metodę dajGłos - co się dzieje i dlaczego ?
+4. Dodaj drugi interfejs RuchomeZwierze z metodą ruszaj().
+5. Zmień interfejs Zwierze tak, żeby rozszerzał RuchomeZwierze.
+Done
+
+2.
+1. Stwórz interfejs Shape z metodą zwracającą double - calculateArea().
+2. Zaimlementuj Circle, Square, Triangle, Cube oraz Sphere które implementują interfejs Shape.
+3. Stwórz interfejs Shape3d z metodą zwracającą double - calculateVolume().
+4. Zaimplementuj interfejs Shape3d w klasie sześcian oraz Kula.
+Done
+
+
+3.
+1. Stwórz interfejs Player z jedną metodą play(String movie).
+Done
+2. Stwórz klasy CDPlayer, DVDPlayer, BlueRayPlayer.
+Done
+3. W nowo powstałych klasach zaimplementuj interfejs Player.
+Done
+4. Zaimplementuj brakujące metody. Niech każda klasa wypsiuje na ekran: "Odtwarzam film <typ>: <film>", np. "Odtwarzam film CD: Avatar".
+Done
+5. W klasie Player dodaj metodę void stop(), z domyślną implementacją, która wypisuje na ekran "Zatrzymanie odtwarzania".
+Done
+6. Nadpisz metodę stop() w DVDPlayer, tak aby wypisywała `Odtwarzacz DVD zatrzymany`.
+Done
+7. Dodaj interfejs HDRPlayer z metodą canPlayHdr, która zwraca informację czy dany odtwarzacz potrafi odtwarzać filmy w wysokiej jakości.
+Done
+8. Zaimplementuj nowo powstały interfejs w klasie BlueRayPlayer.
+Done
+
+4.
+1. Stwórz interfejs Order, który będzie opisywał zamówienie. Każde zamówienie posiada ilość elementów, łączną kwotę zamówienia oraz zamawiającego.
+2. Zamawiający jest opisywany przez osobną klasę
+3. Stwórz klasę Store, która reprezentuje sklep. Klasa Store przyjmuje cenę elementów, wartość zniżki dla studentów oraz wartość zniżki dla zamówień hurtowych.
+4. Stwórz klasy PersonalOrder, StudentOrder, BulkOrder. Każda z tych klas reprezentuje inny typ zamówienia.
+5. W klasie Store dodaj metodę, która przyjmuje ilość elementów oraz zamawiającego i na tej podstawie zwraca odpowiednie zamówienie. Przyjmij, że informacja czy zamawiający jest studentem znajduję się w klasie opisującej zamawiającego, a zamówienia hurtowe to zamówienia które mają więcej niż 1000 przedmiotów.
+done
+
+5.
+1. Stwórz interfejs Procesor z jedną metodą, która zwraca boolean - czyIntel(). Zaimplementuj klasy IntelCore oraz AmdRyzen.
+2. Stwórz intefejs PlytaGlowa z jedną metodą, która zwraca boolean - czyObslugujeIntel(). Zaimplementuj klasy PlytaIntel oraz PlytaAmd.
+3. Stwórz klasę Komputer z trzema polami: wlaczony (boolean), plytaGlowna oraz procesor. Proces i plytaGlowa powinna byc przekazywana w konstruktorze.
+4. Dodaj prywatną metodę czyCzesciPasuja(), która sprawdza, czy podana płyta głowna oraz procesor są kompatybilne.
+5. Zaimplementuj metodę wlacz(), która sprawdza czy części do siebie pasują i jeśli pasują to ustawia pole wlaczony na true.
+
+done

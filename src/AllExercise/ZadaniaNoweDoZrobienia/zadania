@@ -1,0 +1,86 @@
+Zadanie1
+
+1. Stwórz listę Stringów, dodaj przykładowe wartości, a następnie ją posortuj. Jak została posortowana ?
+2. Stwórz set Stringów, a następnie dodaj kilka wartości. Dodaj parę duplikatów - jaki jest rozmiar kolekcji?
+3. Stwórz metodę, która przyjmuje listę przechowującą liczby całkowite, która wypisuje wszystkie liczby.
+4. Zmodyfikuj powyższą metodę tak, aby wypisywała tylko liczby parzyste wraz z ich indeksami.
+5. Zmodyfikuj powyższą metodą tak, aby przyjmowała dowolną kolekcję (co z indeksami?).
+6. Stwórz mapę, a następnie dodaj kilka wartości wraz z kluczami. Wypisz te wpisy na ekran w postaci: "klucz -> wartość".
+7. Stwórz mapę, a następnie dodaj kilka wartości dla tego samego klucza. Która wartość została w mapie ?
+8. Posortuj listę Stringów według ich długości - rosnąco.
+9. Napisz metodę która przyjmuje listę stringów, a następnie zwraca ilość unikalnych elementów w tej kolekcji.
+
+All Done
+
+Zadanie 2
+1. Stwórz klasę Email, która przechowuje adres email (String).
+2. Stwórz kilka obiektów klasy Email (user@mydomain.com, admin@mydomain.com, moderator@mydomain.com).
+3. Stwórz listę, która przechowuje obiekty typu Email, a następnie dodaj stworzone obiekty do listy.
+4. Wypisz stworzoną listę na ekran. W jaki sposób została wypisana lista ? Popraw tak, aby wypisane elementy były w ładnej formie (tzw. human readable ;)).
+5. Stwórz nowy obiekt o adresie identycznym do obiektu admin (admin@mydomain.com). Przy użyciu metody indexOf sprawdź na którym miejscu znajduje się obiekt z takim adresem.
+6. Zapoznaj się z metodą equals oraz Hashcode, a następnie popraw powyższy program tak, aby poprawnie znajdował obiekt email.
+
+All Done
+
+Zadanie 3
+1. Stwórz statyczną metodę, która przyjmuje tekst, a zwraca mapę typu Map<Character, Integer>, która zawiera ilość wystąpień danej litery.
+2. Stwórz dwie wersje powyższej metody - jedna wykorzystuje HashMap, druga - TreeMap.
+3. Wypisz zawartość mapy na ekran w formie "litera -> wartość". Czy poszczególne implementacje się różnią ? Dlaczego ?
+4. Zmodyfikuj powyższą metodą tak aby przekazywać parametr (boolean), który w przypadku przekazania wartości logicznej true powoduje, że mapa ignoruje wielkość liter. Uruchom ponownie program.
+
+All Done
+
+Zadanie 4
+1. Stwórz klasę Person, która przechowuje imię (String), nazwisko (String), wiek (int), zarobki (double).
+2. Stwórz kilka obiektów klasy Person.
+3. Stwórz TreeSet a następnie dodaj kilka stworzone obiekty - co się stało?
+4. Dodaj niezbędne elementy do klasy Person, tak aby domyślnie osoby były sortowane po nazwisku.
+5. Uruchom ponownie program - jaka jest kolejność w zbiorze ?
+6. Stwórz własne komparatory - PersonByNameComparator, PersonByAgeComparator, PersonBySalaryComparator
+7. Stwórz trzy TreeSet - każdy z inną strategią porównywania (stworzonymi powyżej) - wypisz ich zawartość na ekran
+
+All Done
+
+Zadanie 5
+1. Stwórz klasę Key, która będzie wykorzystywana jako klucz w HashMap. Klasa ma zawierać jedno pole - value(int).
+2. Stwórz kilka obiektów klasy Key.
+3. Stwórz mapę HashMap<Key, String>, a następnie dodaj klucze i wartości (wartości są dowolne) - jaka jest kolejność elementów ? Uruchom program kilka razy - czy kolejność zawsze jest taka sama ?
+4. Dodaj implementację hashCode w taki sposób, aby zawsze zwracała tą samą wartość. Uruchom program - jak wygląda mapa ?
+5. Zmnień implementację hashCode tak aby zaczynała się od 0 i z każdym wykonaniem zwracała liczbę o 1 większą. W programie sprawdź czy w mapie znajdują się dodane wcześniej klucze ?
+6. Dodaj dwa razy ten sam klucz do mapy - ile elementów znajduje się mapie ?
+
+AllDone
+
+Zadanie 6
+
+Perfectly balanced. Napisz program, który dla podanych stringów sprawdza czy ilość WSZYSTKICH liter jest taka sama:
+1. - czy jest taka sama ilość x i y
+balanced("xxxyyy") => true
+balanced("yyyxxx") => true
+balanced("xxxyyyy") => false
+balanced("yyxyxxyxxyyyyxxxyxyx") => true
+balanced("xyxxxxyyyxyxxyxxyy") => false
+balanced("") => true
+balanced("x") => false
+
+2. - czy jest taka sam ilość liter
+balanced_bonus("xxxyyyzzz") => true
+balanced_bonus("abccbaabccba") => true
+balanced_bonus("xxxyyyzzzz") => false
+balanced_bonus("abcdefghijklmnopqrstuvwxyz") => true
+balanced_bonus("pqq") => false
+balanced_bonus("fdedfdeffeddefeeeefddf") => false
+balanced_bonus("www") => true
+balanced_bonus("x") => true
+balanced_bonus("") => true
+
+Zadanie 7
+Napisz program, który dla podanego stringu zawierającego nawiasy sprawdza czy wszystkie nawiasy są poprawnie zamknięte. Przykładowo:
+"" => true
+"()" => true
+"()()((()()))" => true
+")" => false
+"()(()" => false
+15.1*. Dodaj obsługę innych typów nawiasów - [], {}
+
+All Done
