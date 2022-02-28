@@ -16,7 +16,8 @@ public class Hexagon extends Shape {
     @Override
     protected double calculateArea() {
         System.out.println("Area  for Hexagon");
-        return ((3 * Math.sqrt(3) / 2) * Math.pow(getSideAShape(), getSideAShape()));
+        return ((3*Math.pow(getSideAShape(),getSideAShape())/Math.sqrt(3))/2);
+        //return ((3 * Math.sqrt(3) / 2) * Math.pow(getSideAShape(), getSideAShape()));
     }
 
 
