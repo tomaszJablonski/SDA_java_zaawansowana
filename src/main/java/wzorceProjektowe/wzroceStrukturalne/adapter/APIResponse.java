@@ -2,8 +2,8 @@ package wzorceProjektowe.wzroceStrukturalne.adapter;
 
 public class APIResponse {
 
-   private float temperature;
-   private String cloudiness;
+    private float temperature;
+    private String cloudiness;
 
     public APIResponse(float temperature, String cloudiness) {
         this.temperature = temperature;
@@ -12,18 +12,6 @@ public class APIResponse {
 
     public float getTemperature() {
         return temperature;
-    }
-
-    public void setTemperature(float temperature) {
-        this.temperature = temperature;
-    }
-
-    public String getCloudiness() {
-        return cloudiness;
-    }
-
-    public void setCloudiness(String cloudiness) {
-        this.cloudiness = cloudiness;
     }
 
     @Override

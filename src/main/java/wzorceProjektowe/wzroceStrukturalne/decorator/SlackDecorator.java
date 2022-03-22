@@ -2,8 +2,8 @@ package wzorceProjektowe.wzroceStrukturalne.decorator;
 
 public class SlackDecorator extends BaseDecorator {
 
-    public SlackDecorator(Notifier wrappee) {
-        super(wrappee);
+    public SlackDecorator(Notifier notifier) {
+        super(notifier);
     }
 
     @Override

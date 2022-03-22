@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
 
         Drink drink = new CoffeePurchase().buy(5.5);
-        System.out.println("drink.getVolume() = " + drink.getVolume());
+        System.out.println("drink.getVolume() = " + drink.getVolume() + "\n" + drink.isAddictive());
 
     }
 }

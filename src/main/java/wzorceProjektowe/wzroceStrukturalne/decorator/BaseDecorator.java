@@ -3,14 +3,14 @@ package wzorceProjektowe.wzroceStrukturalne.decorator;
 
 public abstract class BaseDecorator implements Notifier {
 
-    Notifier wrappee;
+    Notifier notifier;
 
-    public BaseDecorator(Notifier wrappee) {
-        this.wrappee = wrappee;
+    public BaseDecorator(Notifier notifier) {
+        this.notifier = notifier;
     }
 
     @Override
     public void send(String message) {
-        wrappee.send(message);
+        notifier.send(message);
     }
 }

@@ -2,7 +2,7 @@ package wzorceProjektowe.wzroceStrukturalne.compsite;
 
 
 //Leaf
-public class Product implements Component{
+public class Product implements Component {
 
     private double price;
 

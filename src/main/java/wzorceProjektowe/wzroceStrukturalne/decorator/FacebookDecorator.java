@@ -1,9 +1,9 @@
 package wzorceProjektowe.wzroceStrukturalne.decorator;
 
-public class FacebookDecorator extends BaseDecorator{
+public class FacebookDecorator extends BaseDecorator {
 
-    public FacebookDecorator(Notifier wrappee) {
-        super(wrappee);
+    public FacebookDecorator(Notifier notifier) {
+        super(notifier);
     }
 
     @Override

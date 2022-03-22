@@ -11,6 +11,7 @@ public class Singleton {
     //finalnego pola korzystać.
 
     private static final Singleton INSTANCE = new Singleton();
+
     //private static Singleton INSTANCE = null;
 
 

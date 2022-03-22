@@ -14,6 +14,5 @@ public class Main {
 
         System.out.println("adapter.getTemperature() = " + adapter.getTemperature());
 
-
     }
 }
