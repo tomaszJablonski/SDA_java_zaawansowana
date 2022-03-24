@@ -1,4 +1,4 @@
-package wzorceProjektowe.wzorceBehawioralne.ObserwatorWAZNE;
+package wzorceProjektowe.wzorceBehawioralne.obserwatorWAZNE.sDAExample;
 
 public class Customer implements  Subscriber{
 

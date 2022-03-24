@@ -1,4 +1,4 @@
-package wzorceProjektowe.wzorceBehawioralne.MediatorWAZNE;
+package wzorceProjektowe.wzorceBehawioralne.mediatorWAZNE;
 
 public interface Mediator {
     void  notify (Component component);

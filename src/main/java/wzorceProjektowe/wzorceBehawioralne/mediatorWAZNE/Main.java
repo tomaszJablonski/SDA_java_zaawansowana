@@ -1,4 +1,4 @@
-package wzorceProjektowe.wzorceBehawioralne.MediatorWAZNE;
+package wzorceProjektowe.wzorceBehawioralne.mediatorWAZNE;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package wzorceProjektowe.wzorceBehawioralne.ObserwatorWAZNE;
+package wzorceProjektowe.wzorceBehawioralne.obserwatorWAZNE.sDAExample;
 
 
 import java.util.ArrayList;
