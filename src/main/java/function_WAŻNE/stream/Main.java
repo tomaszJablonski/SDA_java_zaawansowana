@@ -44,7 +44,7 @@ public class Main {
                 .collect(Collectors.toList());
         System.out.println("upperCase = " + upperCase);
 
-        //zamist list - set
+        //zamiast list - set
         Set<String> upperCase1 = list.stream()
                 .map(s -> s.toUpperCase())
                 .collect(Collectors.toSet());

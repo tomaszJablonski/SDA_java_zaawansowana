@@ -28,7 +28,7 @@ public class Main {
         Runnable action = () -> System.out.println("Hello");
         action.run();
 
-        //cos przyjmuje nie zwracam nic
+        //cos przyjmuje nie zwraca nic
         Consumer<Long> longConsumer1 = (Long value) ->
                 System.out.println("Hello from consumer1 = " + value);
         longConsumer1.accept(10L);
@@ -44,8 +44,8 @@ public class Main {
         //coś testuje
         Predicate<String> stringRredicate1 =
                 (String value) -> {
-            return value.isEmpty(); //zwracamy to co zwraca wyrażenie po strzałce
-        };
+                    return value.isEmpty(); //zwracamy to co zwraca wyrażenie po strzałce
+                };
 
         boolean test1Result = stringRredicate1.test("Not Empty");
         System.out.println("test1Result = " + test1Result);
@@ -55,35 +55,36 @@ public class Main {
         System.out.println("stringPredicate2 = " + test2Result);
 
         //coś generuje
-        Supplier<Integer> integerSupplier = () ->1;
+        Supplier<Integer> integerSupplier = () -> 1;
         Integer integer = integerSupplier.get();
         System.out.println("integer = " + integer);
 
         //coś przyjmuje coś zwraca
-        Function<String,Integer> function1 = (String value) -> {
+        Function<String, Integer> function1 = (String value) -> {
             return value.length();
         };
         Integer abcLenght1 = function1.apply("abc");
         System.out.println("abcLenght1 = " + abcLenght1);
-        Function<String,Integer> function2 = value ->value.length();
+        Function<String, Integer> function2 = value -> value.length();
         Integer abcLenght2 = function2.apply("abc");
         System.out.println("abcLenght2 = " + abcLenght2);
 
+
         //co gdy metoda przyjmuje więcej niż 1 argument
-        BiPredicate<String,Integer> biPredicate =
-                (String s, Integer i ) -> s.length() >i;
-        BiPredicate<String,Integer> biPredicate2 = (s,i) -> s.length() >i;
+        BiPredicate<String, Integer> biPredicate =
+                (String s, Integer i) -> s.length() > i;
+        BiPredicate<String, Integer> biPredicate2 = (s, i) -> s.length() > i;
 
 
-        List<Integer> list = List.of(1,2,3,4,5,6,7);
+        List<Integer> list = List.of(1, 2, 3, 4, 5, 6, 7);
         //policzy wszystko
-        count(list,i ->true);
+        count(list, i -> true);
         //policzy parzyste
         count(list, i -> i % 2 == 0);
         //policzy nieparzyste
-        count(list, i -> 2 != 0 );
+        count(list, i -> 2 != 0);
         //policzy nieparzyste większe od 3
-        count(list, i -> i >3 && i % 2 !=0 );
+        count(list, i -> i > 3 && i % 2 != 0);
 
         //method reference
         //"referencja do metody"
@@ -92,20 +93,24 @@ public class Main {
         //np.test który sprawdza czy String jest pusty
         Predicate<String> isEmpty = (String s) -> s.isEmpty();
         //albo tak to jest to samo
+        System.out.println("isEmpty = " + isEmpty.test("to jest string"));
         Predicate<String> isEmpty2 = s -> s.isEmpty();
+        System.out.println("isEmpty2 = " + isEmpty2);
         //zawołaj metodę isEmpty z klasy String
         //TO JEST METODA REFERENCYJNA!!! PONIŻEJ
         //jeśli na wejściu typu X wywołujemy tylko metodę Y
         //to możemy napisać X::Y
         Predicate<String> isEmpty3 = String::isEmpty;
+        System.out.println(isEmpty3);
 
     }
+
     //chcemy policzyć, ile ementów z listy spełnia predicate
-    private  static  void  count(List<Integer> list, Predicate<Integer> test){
+    private static void count(List<Integer> list, Predicate<Integer> test) {
         int matchning = 0;
 
-        for (Integer integer: list){
-            if(test.test(integer)){
+        for (Integer integer : list) {
+            if (test.test(integer)) {
                 ++matchning;
             }
         }

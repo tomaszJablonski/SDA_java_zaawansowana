@@ -59,8 +59,8 @@ public class Main {
         Optional<Optional<Integer>> integer = stringOptional.map(s -> Optional.of(s.length()));
         System.out.println("integer = " + integer);
 
-        Optional<Integer> floatInegeer = stringOptional.flatMap(s -> Optional.of(s.length()));
-        System.out.println("floatInegeer = " + floatInegeer);
+        Optional<Integer> flatLenght = stringOptional.flatMap(s -> Optional.of(s.length()));
+        System.out.println("flatLenght = " + flatLenght);
     }
 
 }
