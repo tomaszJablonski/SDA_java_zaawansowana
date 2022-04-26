@@ -1,4 +1,4 @@
-package bardzo_WAŻNE_DO_PRACY.enumerationENUM;
+package bardzo_WAŻNE_DO_PRACY.exepction.ex1.enumerationENUM;
 
 
 //enum o nazwie DayOfWeek

@@ -6,7 +6,7 @@ public class Main {
 
 
     //NullPointerException
-    //rzuczamy gdy chcemy wywowałć akcje na zmiennej a ona przechowuje nulla
+    //rzucany gdy chcemy wywowałć akcje na zmiennej a ona przechowuje nulla
 
     //Optional<T> <- wartość może być ale może być null
     //1.!!!!!!!!!!!!!!!!!! Nigdy NIGDY nie przypisywać nulla do optionala
@@ -29,7 +29,7 @@ public class Main {
         //tylko te używać generalnie
         String orElseString = full.orElse("DefaultValue"); // albo
         // wartość z optionala albo default (nigdy nie dostaniemy nulla)
-        String orEelseThrowString =  full.orElseThrow(() -> new IllegalStateException("Optional should by  full"));
+        String orElseThrowString = full.orElseThrow(() -> new IllegalStateException("Optional should by  full"));
 
 
         //jak sprawdzić czy optional coś w sobie ma:
@@ -45,7 +45,7 @@ public class Main {
         //map -  mapowanie to jest zamiana jednego typu danych w drugi
         //transforumuje emlementy 1:1
         Optional<String> stringOptional = Optional.of("Kamil");
-        Optional<Integer> lenghtOptional =  stringOptional.map((String valueInsideOptional) -> valueInsideOptional.length());
+        Optional<Integer> lenghtOptional = stringOptional.map((String valueInsideOptional) -> valueInsideOptional.length());
         System.out.println("lenghtOptional = " + lenghtOptional);
 
         //filtorwanie
@@ -53,7 +53,8 @@ public class Main {
         Optional<String> stringOptional1 = stringOptional.filter(s -> s.length() < 5);
         System.out.println("stringOptional = " + stringOptional);
 
-        //flatmapowanie - ona go spłaszcza - rozpakowuje zagnieżdżone elementy jak są 2 pudełka to sprawdza każde po kolei i wyciąga tylko dane które są nie opakujwe ich dodatkowo
+        //flatmapowanie - ona go spłaszcza - rozpakowuje zagnieżdżone elementy jak są 2 pudełka to sprawdza każde po kolei i
+        //wyciąga tylko dane które są nie opakowuje ich dodatkowo
         //mapa T -> R ... Optional<T> -> Optional<R>
         //T -> Optional <R> --- Optional<T> -> Optional<Optional<R>> (chcemy :Optional<R>)
         Optional<Optional<Integer>> integer = stringOptional.map(s -> Optional.of(s.length()));

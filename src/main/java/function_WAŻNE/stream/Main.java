@@ -1,9 +1,6 @@
 package function_WAŻNE.stream;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -17,7 +14,6 @@ public class Main {
     //np. map,filter, flatMap,distinct, sort, peek
     // terminalne - operacje które kończą streama i zwracają jakiś wynik, wykonuje akcje
     //np. forEach, collect, count, reduce, findFirst, findAny
-
 
     //stream są:
     //jednorazowe - stream tworzymy i uruchamiamy (poprzez operacje terminalną)
@@ -35,18 +31,18 @@ public class Main {
 
         //zamienić wszystkie elementy w liście na drukowane i stowrzyć nową listę
         list.stream()
-                .map (s -> s.toUpperCase())
-                .forEach(s -> System.out.println(s));
+                .map(String::toUpperCase) //s -> s.toUpperCase()
+                .forEach(System.out::println); // s -> System.out.println(s)
 
         //to samo co u góry, tylko zamiast wypisywać zebrać do listy
         List<String> upperCase = list.stream()
-                .map(s -> s.toUpperCase())
+                .map(String::toUpperCase)   // s -> s.toUpperCase()
                 .collect(Collectors.toList());
         System.out.println("upperCase = " + upperCase);
 
         //zamiast list - set
         Set<String> upperCase1 = list.stream()
-                .map(s -> s.toUpperCase())
+                .map(String::toUpperCase) //s -> s.toUpperCase()
                 .collect(Collectors.toSet());
         System.out.println("upperCase = " + upperCase1);
 
@@ -57,25 +53,25 @@ public class Main {
         System.out.println("listWithStartingWithF = " + listWithStartingWithF);
 
         //można składać operacje
-        List <String> multiOperatingList = list.stream()
-                .map (s -> s.toUpperCase())
+        List<String> multiOperatingList = list.stream()
+                .map(String::toUpperCase)
                 .filter(s -> s.startsWith("F"))
-                .map (s -> "Hello" + s)
-                .collect(Collectors.toList());
+                .map(s -> "Hello" + s)
+                .toList();
         System.out.println("multiOperatingList = " + multiOperatingList);
 
         List<List<String>> collect = list.stream()
-                .map(s -> toChars(s))
-                .collect(Collectors.toList());
+                .map(Main::toChars) //s -> toChars(s)
+                .toList();
         System.out.println("collect = " + collect);
 
         //!!!!!!!!!!!!!!!!!!!!!
         //faltMapa - > pwoduje ,że nie ma List<List<String>>
         //tylko List<String>
         List<String> collect1 = list.stream()
-                .map(s -> toChars(s))
-                .flatMap(l -> l.stream())
-                .collect(Collectors.toList());
+                .map(Main::toChars) // s -> toChars(s)
+                .flatMap(Collection::stream) // l -> l.stream()
+                .toList(); // collect(Collectors.toList())
         System.out.println("collect1 = " + collect1);
 
 

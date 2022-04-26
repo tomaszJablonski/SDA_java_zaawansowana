@@ -1,4 +1,4 @@
-package bardzo_WAŻNE_DO_PRACY.collectionsWAŻNE.Classes;
+package bardzo_WAŻNE_DO_PRACY.collectionsWAŻNE.listSetMapQeDe;
 
 import java.util.HashMap;
 import java.util.Map;

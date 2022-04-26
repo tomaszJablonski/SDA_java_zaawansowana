@@ -42,15 +42,12 @@ public class Main {
         longConsumer3.accept(12L);
 
         //coś testuje
-        Predicate<String> stringRredicate1 =
-                (String value) -> {
-                    return value.isEmpty(); //zwracamy to co zwraca wyrażenie po strzałce
-                };
+        //zwracamy to co zwraca wyrażenie po strzałce
+        Predicate<String> stringRredicate1 = String::isEmpty; //s1 -> s1.isEmpty();
 
         boolean test1Result = stringRredicate1.test("Not Empty");
         System.out.println("test1Result = " + test1Result);
-        Predicate<String> stringPredicate2 = value
-                -> value.isEmpty();
+        Predicate<String> stringPredicate2 = String::isEmpty; //s1 -> s1.isEmpty();
         boolean test2Result = stringPredicate2.test("Not Empty");
         System.out.println("stringPredicate2 = " + test2Result);
 
@@ -60,12 +57,10 @@ public class Main {
         System.out.println("integer = " + integer);
 
         //coś przyjmuje coś zwraca
-        Function<String, Integer> function1 = (String value) -> {
-            return value.length();
-        };
+        Function<String, Integer> function1 = String::length; //s1 -> s1.length();
         Integer abcLenght1 = function1.apply("abc");
         System.out.println("abcLenght1 = " + abcLenght1);
-        Function<String, Integer> function2 = value -> value.length();
+        Function<String, Integer> function2 = String::length; //value -> value.length();
         Integer abcLenght2 = function2.apply("abc");
         System.out.println("abcLenght2 = " + abcLenght2);
 
@@ -91,10 +86,10 @@ public class Main {
         //pozwala zapisać lamby krócej
 
         //np.test który sprawdza czy String jest pusty
-        Predicate<String> isEmpty = (String s) -> s.isEmpty();
+        Predicate<String> isEmpty = String::isEmpty;
         //albo tak to jest to samo
         System.out.println("isEmpty = " + isEmpty.test("to jest string"));
-        Predicate<String> isEmpty2 = s -> s.isEmpty();
+        Predicate<String> isEmpty2 = String::isEmpty;
         System.out.println("isEmpty2 = " + isEmpty2);
         //zawołaj metodę isEmpty z klasy String
         //TO JEST METODA REFERENCYJNA!!! PONIŻEJ
@@ -107,11 +102,11 @@ public class Main {
 
     //chcemy policzyć, ile ementów z listy spełnia predicate
     private static void count(List<Integer> list, Predicate<Integer> test) {
-        int matchning = 0;
+        int matching = 0;
 
         for (Integer integer : list) {
             if (test.test(integer)) {
-                ++matchning;
+                ++matching;
             }
         }
     }

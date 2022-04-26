@@ -1,4 +1,4 @@
-package bardzo_WAŻNE_DO_PRACY.collectionsWAŻNE.Classes;
+package bardzo_WAŻNE_DO_PRACY.collectionsWAŻNE.listSetMapQeDe;
 
 //set - kolekcja nie pozawala na duplikaty
 // dobrze by był hashcode i equals
@@ -36,6 +36,7 @@ public class SetCollectionMain {
         System.out.println("set.size() = " + set.size());
         System.out.println("set.isEmpty() = " + set.isEmpty());
 
+        //nie utrzymuje kolejności dodawania, kolejność jest losowa
         set.add(new Person("Kamil",19));
         set.add(new Person("Kamil",19));
         set.add(new Person("Kamil",19));
@@ -164,15 +165,24 @@ public class SetCollectionMain {
         System.out.println("contains = " + contains);
 
         //iterowanie - pętla for each
-        for(Person person: set){
+        for (Person person : set) {
             System.out.println("person = " + person);
         }
 
         //usuwanie
 
         System.out.println(" before remove = " + set);
-        set.remove(new Person("Damian",25));
+        set.remove(new Person("Damian", 25));
         System.out.println("after remove  = " + set);
+
+        set.stream().sorted(new Comparator<Person>() {
+            @Override
+            public int compare(Person o1, Person o2) {
+                return o1.getName().compareTo(o2.getName());
+            }
+        });
+
+        System.out.println("Posortowany set" + set);
 
         //wyczyścić set
         set.clear();
