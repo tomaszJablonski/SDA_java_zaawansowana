@@ -31,7 +31,6 @@ public class Main {
         // wartość z optionala albo default (nigdy nie dostaniemy nulla)
         String orElseThrowString = full.orElseThrow(() -> new IllegalStateException("Optional should by  full"));
 
-
         //jak sprawdzić czy optional coś w sobie ma:
         boolean isPresent = full.isPresent();
         boolean isEmpty = full.isEmpty();
